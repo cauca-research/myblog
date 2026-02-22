@@ -51,7 +51,7 @@ I write about security, networking, and the occasional career lesson."""
 
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:theopenclawlab@gmail.com"
+    url = "mailto:hello@bryanlopez.net"
 
   # -- Search --
   [params.fuseOpts]
