@@ -6,7 +6,9 @@ summary: "Review of the first book I finished in 2026."
 tags: ["reading", "books", "music"]
 ---
 
-**Author:** Michael Spritzer  
+**Author:** Michael Spritzer
+
+
 **Book Tittle:** The Musical Human: A history of life on earth.
 
 # Why I read this book?
