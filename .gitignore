@@ -1,0 +1,22 @@
+# Hugo build output (generated when you run `hugo` or `hugo server`)
+public/
+
+# Hugo resource cache (processed images, SCSS, etc.)
+resources/_gen/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+
+# Hugo lock file
+.hugo_build.lock
+
+# Obsidian (if editing content/ as a vault)
+.obsidian/

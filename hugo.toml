@@ -1,0 +1,108 @@
+# =============================================================================
+# Hugo Configuration for bryanlopez.net
+# Docs: https://gohugo.io/getting-started/configuration/
+# PaperMod docs: https://adityatelange.github.io/hugo-PaperMod/
+# =============================================================================
+
+# -- Site Basics --
+baseURL = "https://bryanlopez.net/"    # Your custom domain (GitHub Pages will serve from here)
+languageCode = "en-us"
+title = "Bryan Lopez"                   # Appears in browser tab and site header
+theme = "PaperMod"                      # Must match the folder name in themes/
+
+# -- Content Settings --
+summaryLength = 20                      # Words to use for auto-generated summaries
+
+# -- Pagination --
+[pagination]
+  pagerSize = 10                        # Number of posts per page on the home feed
+
+# -- Build Settings --
+# Enable JSON output so PaperMod's built-in search (Fuse.js) can index your content
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# =============================================================================
+# PaperMod Theme Parameters
+# Full list: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-variables/
+# =============================================================================
+[params]
+  # -- Appearance --
+  defaultTheme = "auto"                 # "auto" follows the visitor's OS setting (light/dark)
+  ShowReadingTime = true                # Display estimated reading time on posts
+  ShowBreadCrumbs = true                # Show navigation breadcrumbs (Home > Posts > Title)
+  ShowCodeCopyButtons = true            # Add a "copy" button to code blocks
+  ShowPostNavLinks = true               # Show "Previous / Next" links at the bottom of posts
+  ShowShareButtons = false              # No social share buttons (keeps it clean)
+  ShowWordCount = false                 # Reading time is enough; no need for word count too
+
+  # -- Home Page Profile Mode --
+  # Displays a greeting + bio instead of jumping straight into the post feed
+  [params.homeInfoParams]
+    Title = "Hey, I'm Bryan"
+    Content = """Cybersecurity professional, lifelong learner, and homelab enthusiast. \
+I write about security, networking, and the occasional career lesson."""
+
+  # -- Social Icons --
+  # These appear below the home page greeting
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/cauca-research"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:theopenclawlab@gmail.com"
+
+  # -- Search --
+  [params.fuseOpts]
+    isCaseSensitive = false             # Search is case-insensitive
+    shouldSort = true                   # Results sorted by relevance
+    location = 0
+    distance = 1000
+    threshold = 0.4                     # Lower = stricter matching (0.0 - 1.0)
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+# =============================================================================
+# Navigation Menu
+# weight controls the left-to-right order (lower number = further left)
+# =============================================================================
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "resources"
+  name = "Resources"
+  url = "/resources/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "archives"
+  name = "Archive"
+  url = "/archives/"
+  weight = 50
+
+# =============================================================================
+# Markup Settings
+# =============================================================================
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true                   # Enable fenced code blocks (```)
+    noClasses = true                    # Use inline styles (works without extra CSS)
+    style = "monokai"                   # Syntax highlighting theme
