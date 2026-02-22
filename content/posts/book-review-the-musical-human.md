@@ -7,7 +7,9 @@ tags: ["reading", "books", "music"]
 ---
 
 **Author:** Michael Spritzer
+
 **Book Tittle:** The Musical Human: A history of life on earth.
+
 # Why I read this book?
 
 I asked a good friend for a book recommendation, if I remember correctly I asked because I was interested in reading something different to my usual reads.
