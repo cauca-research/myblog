@@ -41,7 +41,7 @@ summaryLength = 20                      # Words to use for auto-generated summar
   [params.homeInfoParams]
     Title = "Hey, I'm Bryan"
     Content = """Cybersecurity professional, lifelong learner, and homelab enthusiast. \
-I write about security, networking, and the occasional career lesson."""
+I write about security, AI, and books I'm reading."""
 
   # -- Social Icons --
   # These appear below the home page greeting
