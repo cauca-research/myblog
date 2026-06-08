@@ -1,6 +1,6 @@
 ---
 title: "Infosec Europe 2026"
-date: 2026-06-09
+date: 2026-06-08
 draft: false
 summary: "Back at Infosec Europe - My 2026 Highlights"
 tags: ["conference", "infoseceurope", "infosec"]
